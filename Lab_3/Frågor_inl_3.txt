@@ -1,0 +1,12 @@
+Frågor
+
+1. Vad är det för skillnad mellan statisk och dynamisk länkning?
+statisk länkning: alla libraries länkas in i den exekverbara filen vid kompilering. all kåd finns i programmet.
+
+dynamisk länkning: libraries länkas vid behov in när programmet exekveras.
+
+2. Nämn någon fördel och någon nackdel med dynamisk länkning jämfört med statisk länkning.
+
+statisk länkning: ger ökad prestanda men samtidigt tar de större plats.
+
+dynamisk länkning: tar mindre plats men är mer beroende av att nödvändiga libraries finns instalerade.

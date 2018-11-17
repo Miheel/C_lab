@@ -1,0 +1,91 @@
+/*1.2 Frågor*/
+//	1. 
+//	call-by-reference 
+//	call-by-reference Copies the address of the value to the function, 
+//	The function access the value through the address. 
+//	And then any changes made to the value at that address will affects the value outside the funktion.
+#include <stdio.h>
+/*2. Deklaration*/
+void swap(int *x, int *y);
+ 
+int main()
+{
+
+	int num1 = 5, num2 = 10;
+
+	printf("Before swap, num1 : %d\n", num1);
+	printf("Before swap, num2 : %d\n", num2);
+
+	swap(&num1, &num2);
+
+	printf("After swap, num1 : %d\n", num1);
+	printf("After swap, num2 : %d\n", num2);
+	system("PAUSE");
+	return 0;
+}
+/*3. Definition*/
+void swap(int *x, int *y) 
+{
+
+   int temp = *x;
+   *x = *y;
+   *y = temp;
+   
+}
+
+
+
+//	call-by-value
+//	call-by-value copies the value to the funktion, 
+//	so any changes made inside th funktion have no effect on the values outside the funktion
+void swap(int x, int y);
+ 
+int main () 
+{
+   int mun1 = 5, num2 = 1;
+ 
+   printf("Before swap, num1 : %d\n", num1 );
+   printf("Before swap, num2 : %d\n", num2 );
+ 
+   swap(num1, num2);
+ 
+   printf("After swap, num1 : %d\n", num1 );
+   printf("After swap, num2 : %d\n", num2 );
+   system("PAUSE");
+   return 0;
+}
+void swap(int x, int y) 
+{
+   int temp = x;
+   x = y;
+   y = temp;
+}
+
+
+
+
+#include <stdio.h>
+/*2. FunktionsDeklaration*/
+void swap(int *x, int *y);
+
+int main()
+{
+	int num1 = 5, num2 = 10;
+
+	printf("Before swap, num1 : %d\n", num1);
+	printf("Before swap, num2 : %d\n", num2);
+
+	swap(&num1, &num2);
+
+	printf("After swap, num1 : %d\n", num1);
+	printf("After swap, num2 : %d\n", num2);
+	system("PAUSE");
+	return 0;
+}
+/*3. FunktionsDefinition*/
+void swap(int *x, int *y)
+{
+	int temp = *x;
+	*x = *y;
+	*y = temp;
+}

@@ -1,0 +1,43 @@
+frågor
+1.casting
+	int num1, num2;
+	double z;
+	printf("type a number1");
+	scanf("%d", &num1);
+	printf("type a number2");
+	scanf("%d", &num1);
+	printf("%f", z = (double)num1 / (double)num2);
+	
+2. interval mellan 15 till och med 24
+int interval, loop1 = 0;
+	while (loop1 == 0)
+	{
+		scanf("%d", &interval);
+		getchar();
+		//interval mellan 15 till och med 24
+		if (interval >= 15 && interval < 25)
+		{
+			printf("valid %d\n", interval);
+		}
+		else
+		{
+			printf("invalid %d\n", interval);
+		}
+	}
+
+3. intervall mindre eller lika med 15 eller större än 25
+int interval, loop1 = 0;
+	while (loop1 == 0)
+	{
+		scanf("%d", &interval);
+		getchar();
+		//intervall mindre eller lika med 15 eller större än 25
+		if (interval <= 15 || interval > 25)
+		{
+			printf("valid %d\n", interval);
+		}
+		else
+		{
+			printf("invalid%d\n", interval);
+		}
+	}
